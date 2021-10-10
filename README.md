@@ -3,6 +3,6 @@ Application to display current weather information of select cities. The applica
 
 ## Architecture
 1. The application was built in Java.
-2. The application uses Volley to parse JSON data from openweather api and populate views.
+2. The application uses [Volley](https://github.com/google/volley) to parse JSON data from [openweather api](https://openweathermap.org/api) and populate views.
 3. A recyclerview to display a list of cities.
 4. A separate activity to display additional weather information of the city selected on the list.
