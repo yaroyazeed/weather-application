@@ -129,7 +129,10 @@ public class CityAdapter extends RecyclerView.Adapter<CityAdapter.ViewHolder> im
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Toast.makeText(holder.itemView.getContext(), error.toString().trim(), Toast.LENGTH_LONG).show();
+//                 Toast.makeText(holder.itemView.getContext(), error.toString().trim(), Toast.LENGTH_LONG).show();
+//                 Display useful error to user
+                Toast.makeText(holder.itemView.getContext(), "No internet connection", Toast.LENGTH_LONG).show();
+
             }
         });
         RequestQueue requestQueue = Volley.newRequestQueue(holder.itemView.getContext());
